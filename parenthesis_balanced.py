@@ -12,6 +12,7 @@ def is_balanced(input_str):
     temp_stack_holder = []
 
     if len(input_str) % 2 != 0:
+        # If input is of Odd length then straight away we know its unbalanced
         return False
 
     for char in input_str:

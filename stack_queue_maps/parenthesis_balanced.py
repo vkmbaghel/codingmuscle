@@ -5,10 +5,11 @@ Given an expression string exp, write a program to examine whether the pairs and
 """
 
 
-def is_balanced(input_str):
-    brackets_map = {"(": ")", "{": "}", "[": "]"}
-    brackets_map_reversed = dict((value, key) for key, value in brackets_map.items())
+brackets_map = {"(": ")", "{": "}", "[": "]"}
+brackets_map_reversed = dict((value, key) for key, value in brackets_map.items())
 
+def is_balanced(input_str):
+    
     temp_stack_holder = []
 
     if len(input_str) % 2 != 0:
